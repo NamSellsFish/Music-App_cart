@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Murach's Java Servlets and JSP</title>
+    <title>Music Application</title>
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
 </head>
 <body>
     
 <h1>CD list</h1>
-
+<%@ taglib uri="http://coverity.com/security" prefix="cov" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <table>
     <tr>

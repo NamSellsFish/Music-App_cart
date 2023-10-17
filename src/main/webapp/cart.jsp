@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Murach's Java Servlets and JSP</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
 </head>
 <body>
@@ -55,8 +55,8 @@
 </form>
 
 <form action="" method="post">
-  <input type="hidden" name="action" value="checkout">
-  <input type="submit" value="Checkout">
+  <input type="hidden" name="action" value="cart">
+  <input type="submit" value="Back to Cart">
 </form>
 
 </body>

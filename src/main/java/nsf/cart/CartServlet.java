@@ -55,16 +55,18 @@ public class CartServlet extends HttpServlet {
                 quantity = 1;
             }
 
-            String path = sc.getRealPath("/WEB-INF/products.txt");
-            Product product = ProductIO.getProduct(productCode, path);
+            if (productCode != null) {
+                String path = sc.getRealPath("/WEB-INF/products.txt");
+                Product product = ProductIO.getProduct(productCode, path);
 
-            LineItem lineItem = new LineItem();
-            lineItem.setProduct(product);
-            lineItem.setQuantity(quantity);
-            if (quantity > 0) {
-                cart.addItem(lineItem);
-            } else if (quantity == 0) {
-                cart.removeItem(lineItem);
+                LineItem lineItem = new LineItem();
+                lineItem.setProduct(product);
+                lineItem.setQuantity(quantity);
+                if (quantity > 0) {
+                    cart.addItem(lineItem);
+                } else if (quantity == 0) {
+                    cart.removeItem(lineItem);
+                }
             }
 
             session.setAttribute("cart", cart);
