@@ -11,5 +11,9 @@
         <input type="hidden" name="action" value="shop">
         <input type="submit" value="Continue Shopping">
     </form>
+    <form action="" method="post">
+        <input type="hidden" name="action" value="cart">
+        <input type="submit" value="Back to Cart">
+    </form>
 </body>
 </html>
