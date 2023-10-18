@@ -4,31 +4,14 @@
     <meta charset="utf-8">
     <title>Cart</title>
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-          tailwind.config = {
-            theme: {
-              extend: {
-                keyframes: {
-                  rotatecustom: {
-                    "0%": {
-                      transform: "scale(0)"
-                    },
-                    "100%": {
-                      transform: "scale(1)"
-                    }
-                  }
-                }
-
-              }
-            }
-          }
-        </script>
   </head>
 <body>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-  <!-- Breadcrumb -->
-  <c:import url="breadcrumb.html" />
+<div>
+<!-- Breadcrumb -->
+<c:import url="breadcrumb.html" />
+</div> 
+
 <h1>Your cart</h1>
 
 <table>
