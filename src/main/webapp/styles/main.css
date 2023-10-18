@@ -75,7 +75,6 @@ th, td {
 }
 
 .breadcrumb a:last-child {
-    pointer-events: none;
     border-radius: 0 5px 5px 0;
     /*this was to prevent glitches on hover*/
     padding-right: 20px;
