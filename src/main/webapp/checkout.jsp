@@ -27,7 +27,6 @@
 </head>
 <body>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<main class="md:container w-fit mx-auto my-8 flex flex-col place-items-center">
     <!-- Breadcrumb -->
     <c:import url="breadcrumb.html" />
     <h1>Checkout isn't finished yet</h1>
@@ -41,7 +40,5 @@
         <input type="submit" value="Back to Cart">
     </form>
     </div>
-
-</main>
 </body>
 </html>

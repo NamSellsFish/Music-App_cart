@@ -26,8 +26,7 @@
     </script>
 </head>
 <body>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<main class="md:container w-fit mx-auto my-8 flex flex-col place-items-center">    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>   
         <!-- Breadcrumb -->
         <c:import url="breadcrumb.html" />
 
@@ -48,7 +47,6 @@
             </form></td>
     </tr>
     </c:forEach>
-</table>
-</main>  
+</table>  
 </body>
 </html>
