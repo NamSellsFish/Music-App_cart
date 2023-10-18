@@ -4,11 +4,34 @@
     <meta charset="utf-8">
     <title>Music Application</title>
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    keyframes: {
+                        rotatecustom: {
+                            "0%": {
+                                transform: "scale(0)"
+                            },
+                            "100%": {
+                                transform: "scale(1)"
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    </script>
 </head>
 <body>
-    
+
+<main class="md:container w-fit mx-auto my-8 flex flex-col place-items-center">    
+        <!-- Breadcrumb -->
+        <c:import url="breadcrumb.html" />
+
 <h1>CD list</h1>
-<%@ taglib uri="http://coverity.com/security" prefix="cov" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <table>
     <tr>
@@ -27,6 +50,6 @@
     </tr>
     </c:forEach>
 </table>
-        
+</main>  
 </body>
 </html>

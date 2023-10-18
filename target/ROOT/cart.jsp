@@ -4,9 +4,31 @@
     <meta charset="utf-8">
     <title>Cart</title>
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
-</head>
-<body>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                keyframes: {
+                  rotatecustom: {
+                    "0%": {
+                      transform: "scale(0)"
+                    },
+                    "100%": {
+                      transform: "scale(1)"
+                    }
+                  }
+                }
 
+              }
+            }
+          }
+        </script>
+  </head>
+<body>
+<main class="md:container w-fit mx-auto my-8 flex flex-col place-items-center">
+  <!-- Breadcrumb -->
+  <c:import url="breadcrumb.html" />
 <h1>Your cart</h1>
 
 <table>
@@ -48,7 +70,7 @@
 
 <p><b>To change the quantity</b>, enter the new quantity 
       and click on the Update button.</p>
-  
+<div class="flex justify-between">
 <form action="" method="post">
   <input type="hidden" name="action" value="shop">
   <input type="submit" value="Continue Shopping">
@@ -58,6 +80,7 @@
   <input type="hidden" name="action" value="checkout">
   <input type="submit" value="Checkout">
 </form>
-
+</div>
+</main>
 </body>
 </html>
