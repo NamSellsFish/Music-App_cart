@@ -32,7 +32,7 @@
         <c:import url="breadcrumb.html" />
 
 <h1>CD list</h1>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> -->
 <table>
     <tr>
         <th>Description</th>
