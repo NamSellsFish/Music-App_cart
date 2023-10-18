@@ -21,6 +21,12 @@ public class ProductsServlet extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session = request.getSession();
 
+        // get current action
+        String action = request.getParameter("action");
+        if (action == null) {
+            action = "loadProducts"; // default action
+        }
+
         String path = getServletContext().getRealPath("/WEB-INF/products.txt");
         ArrayList<Product> products = ProductIO.getProducts(path);
         session.setAttribute("products", products);
